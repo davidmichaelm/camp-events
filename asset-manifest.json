@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/camp-events/static/css/main.a617e044.chunk.css",
+    "main.js": "/camp-events/static/js/main.8c27b8d3.chunk.js",
+    "main.js.map": "/camp-events/static/js/main.8c27b8d3.chunk.js.map",
+    "runtime-main.js": "/camp-events/static/js/runtime-main.ae965b87.js",
+    "runtime-main.js.map": "/camp-events/static/js/runtime-main.ae965b87.js.map",
+    "static/js/2.d9fd960b.chunk.js": "/camp-events/static/js/2.d9fd960b.chunk.js",
+    "static/js/2.d9fd960b.chunk.js.map": "/camp-events/static/js/2.d9fd960b.chunk.js.map",
+    "static/js/3.fa052a04.chunk.js": "/camp-events/static/js/3.fa052a04.chunk.js",
+    "static/js/3.fa052a04.chunk.js.map": "/camp-events/static/js/3.fa052a04.chunk.js.map",
+    "index.html": "/camp-events/index.html",
+    "static/css/main.a617e044.chunk.css.map": "/camp-events/static/css/main.a617e044.chunk.css.map",
+    "static/js/2.d9fd960b.chunk.js.LICENSE.txt": "/camp-events/static/js/2.d9fd960b.chunk.js.LICENSE.txt",
+    "static/media/logo.6ce24c58.svg": "/camp-events/static/media/logo.6ce24c58.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.ae965b87.js",
+    "static/js/2.d9fd960b.chunk.js",
+    "static/css/main.a617e044.chunk.css",
+    "static/js/main.8c27b8d3.chunk.js"
+  ]
+}
