@@ -8,7 +8,7 @@ p {
 
 .campEventsApp {
     background: rgba(254, 209, 54, 0.75);
-    margin: 25px;
+    margin: 25px 30px 30px 30px;
     padding: 30px;
     border-radius: 9px;
 }
