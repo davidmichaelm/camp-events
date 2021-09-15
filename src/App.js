@@ -13,7 +13,8 @@ function App() {
                 "imageUrl": image.asset->url,
                 startDate,
                 endDate,
-                shortDescription
+                shortDescription,
+                buttons
             }`;
             const query = `?query=${encodeURIComponent(groq)}`;
             let response = await fetch(`https://m5ik5me8.api.sanity.io/v1/data/query/production${query}`);
@@ -50,8 +51,15 @@ function App() {
                                 </div>
 
                                 <div className={styles.eventButtons}>
-                                    <div className={styles.eventButton}>Learn More</div>
-                                    <div className={styles.eventButton}>Sign Up</div>
+                                    {
+                                        e.buttons.map((b, i) => {
+                                            return (
+                                                <a href={b.url} key={i} className={styles.eventButton}>
+                                                    <div>{b.text}</div>
+                                                </a>
+                                            )
+                                        })
+                                    }
                                 </div>
                             </div>
                         );

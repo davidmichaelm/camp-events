@@ -82,6 +82,10 @@ p {
     /*align-content: space-between;*/
 }
 
+.eventButtons a {
+    text-decoration: none;
+}
+
 .eventButton {
     flex: 1;
     margin: 0 5px;
