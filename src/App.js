@@ -30,32 +30,34 @@ function App() {
     return (
         <div className={styles.campEventsApp}>
             <h1 className={styles.eventsHeader}>What's going on at Camp?</h1>
-            {
-                events.map((e, index) => {
-                    return (
-                        <div key={index} className={styles.eventCard}>
-                            <img src={e.imageUrl} className={styles.image} />
+            <div className={styles.eventsContainer}>
+                {
+                    events.map((e, index) => {
+                        return (
+                            <div key={index} className={styles.eventCard}>
+                                <img src={e.imageUrl} className={styles.image} />
 
-                            <div className={styles.eventCardHeader}>
-                                <h3 className={styles.eventCardTitle}>{e.name}</h3>
-                                <div className={styles.eventCardDate}>{new Date(e.startDate).toLocaleDateString("en", {
-                                    day: "numeric",
-                                    month: "long"
-                                })}</div>
-                            </div>
+                                <div className={styles.eventCardHeader}>
+                                    <h3 className={styles.eventCardTitle}>{e.name}</h3>
+                                    <div className={styles.eventCardDate}>{new Date(e.startDate).toLocaleDateString("en", {
+                                        day: "numeric",
+                                        month: "long"
+                                    })}</div>
+                                </div>
 
-                            <div className={styles.eventCardBody}>
-                                <BlockContent blocks={e.shortDescription} />
-                            </div>
+                                <div className={styles.eventCardBody}>
+                                    <BlockContent blocks={e.shortDescription} />
+                                </div>
 
-                            <div className={styles.eventButtons}>
-                                <div className={styles.eventButton}>Learn More</div>
-                                <div className={styles.eventButton}>Sign Up</div>
+                                <div className={styles.eventButtons}>
+                                    <div className={styles.eventButton}>Learn More</div>
+                                    <div className={styles.eventButton}>Sign Up</div>
+                                </div>
                             </div>
-                        </div>
-                    );
-                })
-            }
+                        );
+                    })
+                }
+            </div>
         </div>
     );
 }
