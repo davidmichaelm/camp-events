@@ -89,7 +89,7 @@ p {
 .eventButton {
     flex: 1;
     margin: 0 5px;
-    background: #266390;
+    background: #5388D7;
     color: white;
     padding: 10px 0;
     text-align: center;
@@ -98,7 +98,7 @@ p {
 
 .eventButton:hover {
     color: unset;
-    background-color: #6196C6;
+    background-color: #3E7BD7;
 }
 
 @media only screen and (min-width: 600px) {
