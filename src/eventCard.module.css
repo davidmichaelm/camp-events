@@ -97,7 +97,7 @@ p {
 }
 
 .eventButton:hover {
-    color: unset;
+    color: white;
     background-color: #3E7BD7;
 }
 
