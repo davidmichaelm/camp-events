@@ -2,7 +2,7 @@ import {useEffect, useState} from "react";
 import BlockContent from "@sanity/block-content-to-react";
 import styles from "./eventCard.module.css";
 
-function App() {
+function CampEvents() {
     const [events, setEvents] = useState([]);
 
     useEffect(() => {
@@ -30,13 +30,15 @@ function App() {
 
     return (
         <div className={styles.campEventsApp}>
-            <h1 className={styles.eventsHeader}>What's going on at Camp?</h1>
+            <div className={styles.eventsHeader}>
+                <h1>What's going on at Camp?</h1>
+            </div>
             <div className={styles.eventsContainer}>
                 {
                     events.map((e, index) => {
                         return (
                             <div key={index} className={styles.eventCard}>
-                                <img src={e.imageUrl} className={styles.image} />
+                                <img src={e.imageUrl} className={styles.image} crossOrigin={"anonymous"} />
 
                                 <div className={styles.eventCardHeader}>
                                     <h3 className={styles.eventCardTitle}>{e.name}</h3>
@@ -70,4 +72,4 @@ function App() {
     );
 }
 
-export default App;
+export default CampEvents;

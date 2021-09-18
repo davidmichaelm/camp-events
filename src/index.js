@@ -1,11 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
+import CampEvents from './CampEvents';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <CampEvents />
   </React.StrictMode>,
   document.getElementById('camp-events')
 );
