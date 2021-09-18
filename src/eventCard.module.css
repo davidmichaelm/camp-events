@@ -123,6 +123,7 @@ p {
 
     .eventsHeader h1 {
         font-size: 36px;
+        margin: 20px 0;
     }
 
     .eventsContainer {
