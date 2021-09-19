@@ -4,6 +4,7 @@ import {EventCard} from "./EventCard";
 
 function CampEvents() {
     const [events, setEvents] = useState([null, null]);
+    const [loading, setLoading] = useState(true);
 
     useEffect(() => {
         const fetchEvents = async () => {
@@ -23,7 +24,7 @@ function CampEvents() {
             setEvents(response.result)
         }
 
-        fetchEvents();
+        fetchEvents().then(() => setLoading(false));
     }, []);
 
     console.log(styles);
@@ -37,7 +38,7 @@ function CampEvents() {
             <div className={styles.eventsContainer}>
                 {
                     events.map((event, index) => {
-                        return <EventCard {...event} key={index} />;
+                        return <EventCard {...event} key={index} loading={loading} />;
                     })
                 }
             </div>

@@ -3,7 +3,7 @@ import BlockContent from "@sanity/block-content-to-react";
 import {DateTime, Interval} from "luxon";
 import Skeleton, {SkeletonTheme} from "react-loading-skeleton";
 
-export const EventCard = ({name, imageUrl, startDate, endDate, shortDescription, buttons}) => {
+export const EventCard = ({name, imageUrl, startDate, endDate, shortDescription, buttons, loading}) => {
     const dates = getDates(startDate, endDate)
 
     return (
@@ -35,7 +35,9 @@ export const EventCard = ({name, imageUrl, startDate, endDate, shortDescription,
                                 </a>
                             )
                         }))
-                        : <Skeleton className={styles.eventButton} />
+                        : loading ?
+                            <Skeleton className={styles.eventButton} />
+                            : <></>
                     }
                 </div>
             </div>
