@@ -87,6 +87,7 @@ p {
 
 .image {
     width: 100%;
+    min-height: 230px;
     max-height: 230px;
     border-radius: 4px 4px 0 0;
     object-fit: cover;
