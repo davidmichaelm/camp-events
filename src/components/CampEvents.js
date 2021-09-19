@@ -30,17 +30,19 @@ function CampEvents() {
     console.log(styles);
 
     return (
-        <div className={styles.campEventsApp}>
-            <div className={styles.eventsHeader}>
-                <h1>What's going on at Camp?</h1>
-            </div>
+        <div className={styles.appContainer}>
+            <div className={styles.campEventsApp}>
+                <div className={styles.eventsHeader}>
+                    <h1>What's going on at Camp?</h1>
+                </div>
 
-            <div className={styles.eventsContainer}>
-                {
-                    events.map((event, index) => {
-                        return <EventCard {...event} key={index} loading={loading} />;
-                    })
-                }
+                <div className={styles.eventsContainer}>
+                    {
+                        events.map((event, index) => {
+                            return <EventCard {...event} key={index} loading={loading} />;
+                        })
+                    }
+                </div>
             </div>
         </div>
     );
