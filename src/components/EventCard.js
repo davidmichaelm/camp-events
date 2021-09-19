@@ -19,7 +19,7 @@ export const EventCard = ({name, imageUrl, startDate, endDate, shortDescription,
             </div>
 
             <div className={styles.eventButtons}>
-                {
+                { buttons &&
                     buttons.map(({url, text}, i) => {
                         return (
                             <a href={url} key={i} className={styles.eventButton}>
