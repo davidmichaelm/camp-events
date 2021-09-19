@@ -3,7 +3,7 @@ import styles from "../eventCard.module.css";
 import {EventCard} from "./EventCard";
 
 function CampEvents() {
-    const [events, setEvents] = useState([]);
+    const [events, setEvents] = useState([null, null]);
 
     useEffect(() => {
         const fetchEvents = async () => {
@@ -20,8 +20,7 @@ function CampEvents() {
             const query = `?query=${encodeURIComponent(groq)}`;
             let response = await fetch(`https://m5ik5me8.api.sanity.io/v1/data/query/production${query}`);
             response = await response.json();
-            console.log(response.result);
-            setEvents(response.result);
+            setEvents(response.result)
         }
 
         fetchEvents();
