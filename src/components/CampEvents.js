@@ -7,7 +7,8 @@ function CampEvents() {
 
     useEffect(() => {
         const fetchEvents = async () => {
-            const groq = `*[_type == 'event' && active == true] {
+            const groq = `*[_type == 'event' && active == true]  | order(startDate asc)
+            {
                 active,
                 name,
                 "imageUrl": image.asset->url,
