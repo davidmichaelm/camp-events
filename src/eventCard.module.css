@@ -145,6 +145,7 @@ p {
     .eventsContainer {
         flex-direction: row;
         overflow: auto;
+        padding-bottom: 20px !important;
     }
 
     .eventCard {
@@ -159,7 +160,6 @@ p {
         max-width: 950px;
         overflow: auto;
         margin: 20px;
-        padding-bottom: 20px;
         border-radius: 9px;
         box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
     }
